@@ -17,6 +17,7 @@ export class FaceSnapComponent implements OnInit {
   snaps!: number;
   image!: string;
   buttonText!: string;
+  location!: string;
 
   ngOnInitq() {
     this.title = 'Archibald';
@@ -25,6 +26,7 @@ export class FaceSnapComponent implements OnInit {
     this.snaps = 0;
     this.image = './assets/img/judy.png';
     this.buttonText = 'oh';
+    this.location = 'Paris'
   }
 
   onSnap() {
