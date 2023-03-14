@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from './models/face-snap.model';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +7,19 @@ import { FaceSnap } from './models/face-snap.model';
 })
 export class AppComponent implements OnInit{
 
-  mySnap!: FaceSnap;
+  ngOnInit() { }
+}
 
-  ngOnInit() {
+  /*ngOnInit() {
     this.mySnap = new FaceSnap(
       'Judy',
       'COucou',
       'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
       new Date(),
-      0
+      0,
+      'PARIs'
     );
       
   }
   //title = 'snapface';
-}
+}*/
